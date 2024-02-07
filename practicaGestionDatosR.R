@@ -30,4 +30,9 @@ matrix1 <- matrix(c(3,4,6,5,4,2,1,4,5,3,1,2),
 print(matrix1)
 which.max(rowSums(matrix1))
 
+# Ej.7
+matrix2 <- matrix(c(1992,1993,1996,1998,2002,2005,2007,2010,2011,2020,2008,1999), 
+                  nrow = 4, ncol = 3)
+print(matrix2)
+which.min(colSums(matrix2))
           
