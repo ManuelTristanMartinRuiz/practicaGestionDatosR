@@ -60,12 +60,29 @@ tipo_artefacto <- sample(c("Cerámica","Metal","Vidrio"), n_registros, replace =
 fecha_descubrimiento <- sample(1990:2020, n_registros, replace = TRUE)
 descripción <- sample(c("Tinaja", "Moneda", "Ungüentario"),n_registros, replace = TRUE)
 
-archaeological_data <- data.frame(
+registro_artefactos <- data.frame(
   sitio_arqueologico = sitio_arqueologico,
   tipo_artefacto = tipo_artefacto,
   cantidad_artefactos = fecha_descubrimiento,
   descripción = descripción
 )
-print(archaeological_data)
+print(registro_artefactos)
 
+# Ej.12
+set.seed(123)
+
+n_registros <- 15
+
+equipo <- sample(c("Equipo 1", "Equipo 2", "Equipo 3"),n_registros, replace = TRUE)
+sitio_arqueologico <- sample(c("Los Millares", "Turruñuelo", "Las Pilas"),n_registros, replace = TRUE)
+fecha_inicio <- sample(c(as.Date(1960-10-12:1968-03-12)), n_registros, replace = TRUE)
+fecha_final <- sample(c(as.Date(1960-10-12:1968-03-12)),n_registros, replace = TRUE)
+
+excavaciones_equipo <- data.frame(
+  equipo = equipo,
+  sitio_arqueologico = sitio_arqueologico,
+  fecha_inicio = fecha_inicio,
+  fecha_final = fecha_final
+)
+print(excavaciones_equipo)
           
