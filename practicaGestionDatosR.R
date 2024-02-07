@@ -50,4 +50,22 @@ matrix5 <- matrix(c(23,34,15,23,17,47,35,19,14,32,27,38),
 print(matrix5)
 which.max(colSums(matrix5))
 
+# Ej.11
+set.seed(123)
+
+n_registros <- 15
+
+sitio_arqueologico <- sample(c("Los Millares", "Turruñuelo", "Las Pilas"),n_registros, replace = TRUE)
+tipo_artefacto <- sample(c("Cerámica","Metal","Vidrio"), n_registros, replace = TRUE)
+fecha_descubrimiento <- sample(1990:2020, n_registros, replace = TRUE)
+descripción <- sample(c("Tinaja", "Moneda", "Ungüentario"),n_registros, replace = TRUE)
+
+archaeological_data <- data.frame(
+  sitio_arqueologico = sitio_arqueologico,
+  tipo_artefacto = tipo_artefacto,
+  cantidad_artefactos = fecha_descubrimiento,
+  descripción = descripción
+)
+print(archaeological_data)
+
           
