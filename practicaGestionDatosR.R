@@ -19,6 +19,15 @@ length(materiales_encontrados)
 # Ej.5 
 años_excavaciones <- c(2013,2015,2016,2017,2021,2022)
 length(años_excavaciones)
+max_excavaciones <- max(años_excavaciones)
+min_excavaciones <- min(años_excavaciones)
+
+diff.Date(max_excavaciones,min_excavaciones)
 
 # Ej.6
-matrix1()
+matrix1 <- matrix(c(3,4,6,5,4,2,1,4,5,3,1,2), 
+                  nrow = 4, ncol = 3)
+print(matrix1)
+which.max(rowSums(matrix1))
+
+          
