@@ -92,13 +92,13 @@ edad_estimada <- sample(c(1:99),n_registros, replace = TRUE)
 sexo <- sample(c("Masculino","Posible Masculino","Posible Femenino","Femenino","Indeterminado"), n_registros, replace = TRUE)
 caracteristica_especial <- sample(c("Tuberculosis","Artritis","Embarazo","Violencia","-"),n_registros, replace = TRUE)
 
-excavaciones_equipo <- data.frame(
+datos_esqueletos <- data.frame(
   sitio_arqueologico = sitio_arqueologico,
   edad_estimada = edad_estimada,
   sexo = sexo,
   caracteristica_especial = caracteristica_especial
 )
-print(excavaciones_equipo)
+print(datos_esqueletos)
 
 # Ej.14
 sitio_arqueologico <- sample(c("Los Millares", "Turruñuelo", "Las Pilas"),n_registros, replace = TRUE)
@@ -106,11 +106,12 @@ latitud <- sample(c(35.1:45.9),n_registros, replace = TRUE)
 longitud <- sample(c(-10.1:0.9), n_registros, replace = TRUE)
 altitud <- sample(c(0:1500),n_registros, replace = TRUE)
 
-excavaciones_equipo <- data.frame(
+ubicaciones_geográficas <- data.frame(
   sitio_arqueologico = sitio_arqueologico,
   latitud = latitud,
   longitud = longitud,
   altitud = altitud
 )
-print(excavaciones_equipo)
+print(ubicaciones_geográficas)
+View(ubicaciones_geográficas)
           
